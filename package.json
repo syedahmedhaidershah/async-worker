@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/syedahmedhaidershah/async-worker-state-message.git"
+    "url": "git+https://github.com/syedahmedhaidershah/async-worker.git"
   },
   "keywords": [
     "async-worker",
@@ -24,9 +24,9 @@
   "author": "Syed Ahmed Haider Shah",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/syedahmedhaidershah/async-worker-state-message/issues"
+    "url": "https://github.com/syedahmedhaidershah/async-worker/issues"
   },
-  "homepage": "https://github.com/syedahmedhaidershah/async-worker-state-message#readme",
+  "homepage": "https://github.com/syedahmedhaidershah/async-worker#readme",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   }
