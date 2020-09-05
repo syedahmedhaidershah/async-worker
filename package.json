@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/syedahmedhaidershah/async-worker-state-message/issues"
   },
-  "homepage": "https://github.com/syedahmedhaidershah/async-worker-state-message#readme"
+  "homepage": "https://github.com/syedahmedhaidershah/async-worker-state-message#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
