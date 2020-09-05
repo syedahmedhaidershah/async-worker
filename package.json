@@ -1,6 +1,6 @@
 {
   "name": "async-worker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An async worker messaging package. Could be used for state-management.",
   "main": "index.js",
   "scripts": {
@@ -22,7 +22,7 @@
     "service-worker"
   ],
   "author": "Syed Ahmed Haider Shah",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/syedahmedhaidershah/async-worker-state-message/issues"
   },
