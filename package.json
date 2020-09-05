@@ -1,6 +1,6 @@
 {
-  "name": "async-worker",
-  "version": "1.0.1",
+  "name": "async-worker-state",
+  "version": "1.0.0",
   "description": "An async worker messaging package. Could be used for state-management.",
   "main": "index.js",
   "scripts": {
@@ -29,5 +29,5 @@
   "homepage": "https://github.com/syedahmedhaidershah/async-worker#readme",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
-  }
+  }\
 }
