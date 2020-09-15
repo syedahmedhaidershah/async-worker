@@ -3,11 +3,15 @@ let state = {};
 addEventListener('message', ({ data }) => {
   const {
     topic,
-    message: {
-      key,
-      value
-    }
+    message
   } = data;
+
+  let key, value;
+
+  if(message) {
+    key = message.key;
+    value = message.value;
+  }
 
   switch (topic) {
     case 'set':
@@ -25,6 +29,16 @@ addEventListener('message', ({ data }) => {
           value: state[key]
         }
       });
+      break;
+    case 'state':
+      postMessage({
+        topic: 'get-state',
+        message: {
+          key,
+          value: state
+        }
+      })
+      break;
     default:
       break;
   }

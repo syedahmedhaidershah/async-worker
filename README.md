@@ -53,18 +53,33 @@ A sample usage of this **Async Worker**  as follows:
 
 ```js
 
-const aw = require('async-worker');
+const {
+  AsyncWorkerStateMessage:
+} = require('async-worker');
 
-const awInstance = aw();
 // You could pass a custom worker path in here.
 // const awInstance = aw(<YOUR_WORKER's_PATH>);
+const awInstance = new aw();
 
 // this is an anonymous function or IIFE that will set a key and retreive it to the worker's state using a key-value pair.
 (async () => {
-    const stored = await aw.setState('test',456);
-    const retreived = await aw.getState('test');
+    const stored = await awInstance.setState('test',456);
+    const retreived = await awInstance.getState('test');
     console.log(retreived); // This will log 456
 })();
+
+```
+
+The following methods are available from the class.
+```ts
+// get a stored key
+const getProp(key: string): any;
+
+// set a value for a prop
+const setProp(key: string, value: any): any;
+
+// get the entire stored state
+const getState(): Object;
 
 ```
 
